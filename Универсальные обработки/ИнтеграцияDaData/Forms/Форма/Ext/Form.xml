@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДанныеПодключения" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные подключения к сервису DaData</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные подключения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаДанныеПодключенияРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<InputField name="Токен" id="82">
+					<DataPath>Токен</DataPath>
+					<ContextMenu name="ТокенКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="84"/>
+				</InputField>
+				<InputField name="СекретныйТокен" id="79">
+					<DataPath>СекретныйТокен</DataPath>
+					<ContextMenu name="СекретныйТокенКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="СекретныйТокенРасширеннаяПодсказка" id="81"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоискОрганизации" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПоискОрганизацииРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="Инн" id="3">
+					<DataPath>Объект.СтрокаПоиска</DataPath>
+					<ContextMenu name="ИннКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ИннРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<Button name="ТестовыйЗапрос" id="1">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьОрганизацию</CommandName>
+					<ExtendedTooltip name="ТестовыйЗапросРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="ПолучитьОрганизациюПоИНН" id="77">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьОрганизациюПоИНН</CommandName>
+					<ExtendedTooltip name="ПолучитьОрганизациюПоИННРасширеннаяПодсказка" id="78"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="35">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Button name="ПолучитьАдресПоСтроке" id="73">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьАдресПоСтроке</CommandName>
+					<ExtendedTooltip name="ПолучитьАдресПоСтрокеРасширеннаяПодсказка" id="74"/>
+				</Button>
+				<InputField name="широта" id="6">
+					<DataPath>Объект.широта</DataPath>
+					<ContextMenu name="широтаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="широтаРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="долгота" id="9">
+					<DataPath>Объект.долгота</DataPath>
+					<ContextMenu name="долготаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="долготаРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<Button name="ПолучитьАдреса" id="12">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьАдресаПоГеокоординатам</CommandName>
+					<ExtendedTooltip name="ПолучитьАдресаРасширеннаяПодсказка" id="13"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="66">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<InputField name="Поле1" id="68">
+					<DataPath>СтатистикаИспользования</DataPath>
+					<ContextMenu name="Поле1КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<Button name="ОбновитьСтатистику" id="71">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьСтатистику</CommandName>
+					<ExtendedTooltip name="ОбновитьСтатистикуРасширеннаяПодсказка" id="72"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты поиска</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<Table name="РезультатыПоиска" id="14">
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.РезультатыПоиска</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РезультатыПоискаКонтекстноеМеню" id="15"/>
+					<AutoCommandBar name="РезультатыПоискаКоманднаяПанель" id="16"/>
+					<ExtendedTooltip name="РезультатыПоискаРасширеннаяПодсказка" id="17"/>
+					<SearchStringAddition name="РезультатыПоискаСтрокаПоиска" id="18">
+						<AdditionSource>
+							<Item>РезультатыПоиска</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РезультатыПоискаСтрокаПоискаКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="РезультатыПоискаСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РезультатыПоискаСостояниеПросмотра" id="21">
+						<AdditionSource>
+							<Item>РезультатыПоиска</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РезультатыПоискаСостояниеПросмотраКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="РезультатыПоискаСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РезультатыПоискаУправлениеПоиском" id="24">
+						<AdditionSource>
+							<Item>РезультатыПоиска</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РезультатыПоискаУправлениеПоискомКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="РезультатыПоискаУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="60edb81d-887b-478e-94ee-7fef2b13393d">РезультатыПоискаПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="РезультатыПоискаНомерСтроки" id="27">
+							<DataPath>Объект.РезультатыПоиска.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РезультатыПоискаНомерСтрокиКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="РезультатыПоискаНомерСтрокиРасширеннаяПодсказка" id="29"/>
+						</LabelField>
+						<InputField name="РезультатыПоискаНазвание" id="30">
+							<DataPath>Объект.РезультатыПоиска.Название</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="РезультатыПоискаНазваниеКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="РезультатыПоискаНазваниеРасширеннаяПодсказка" id="32"/>
+							<Events>
+								<Event name="Opening">РезультатыПоискаНазваниеОткрытие</Event>
+							</Events>
+						</InputField>
+						<InputField name="РезультатыПоискаИНН" id="37">
+							<DataPath>Объект.РезультатыПоиска.ИНН</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="РезультатыПоискаИННКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="РезультатыПоискаИННРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="РезультатыПоискаИдентификатор" id="59">
+							<DataPath>Объект.РезультатыПоиска.Идентификатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>5</Width>
+							<ContextMenu name="РезультатыПоискаИдентификаторКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="РезультатыПоискаИдентификаторРасширеннаяПодсказка" id="61"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Детальная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Table name="ДанныеОрганизации" id="40">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ДанныеОрганизации</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДанныеОрганизацииКонтекстноеМеню" id="41"/>
+					<AutoCommandBar name="ДанныеОрганизацииКоманднаяПанель" id="42"/>
+					<ExtendedTooltip name="ДанныеОрганизацииРасширеннаяПодсказка" id="43"/>
+					<SearchStringAddition name="ДанныеОрганизацииСтрокаПоиска" id="44">
+						<AdditionSource>
+							<Item>ДанныеОрганизации</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДанныеОрганизацииСтрокаПоискаКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="ДанныеОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДанныеОрганизацииСостояниеПросмотра" id="47">
+						<AdditionSource>
+							<Item>ДанныеОрганизации</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДанныеОрганизацииСостояниеПросмотраКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="ДанныеОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДанныеОрганизацииУправлениеПоиском" id="50">
+						<AdditionSource>
+							<Item>ДанныеОрганизации</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДанныеОрганизацииУправлениеПоискомКонтекстноеМеню" id="51"/>
+						<ExtendedTooltip name="ДанныеОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ДанныеОрганизацииРеквизит" id="53">
+							<DataPath>ДанныеОрганизации.Реквизит</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДанныеОрганизацииРеквизитКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ДанныеОрганизацииРеквизитРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="ДанныеОрганизацииЗначение" id="56">
+							<DataPath>ДанныеОрганизации.Значение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДанныеОрганизацииЗначениеКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ДанныеОрганизацииЗначениеРасширеннаяПодсказка" id="58"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ИнтеграцияDaData</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДанныеОрганизации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Значение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Реквизит" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтатистикаИспользования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статистика использования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Токен" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СекретныйТокен" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секретный токен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьОрганизацию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить организацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить организацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьОрганизацию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьАдресаПоГеокоординатам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить адреса по геокоординатам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить адреса по геокоординатам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьАдреса</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьСтатистику" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить статистику</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить статистику</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСтатистику</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьАдресПоСтроке" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить адрес по строке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить адрес по строке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьАдресПоСтроке</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьОрганизациюПоИНН" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить организацию по ИНН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить организацию по ИНН</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьОрганизациюПоИНН</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
