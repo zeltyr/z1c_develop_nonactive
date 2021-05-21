@@ -399,7 +399,7 @@
 					<v8:content>Получить адреса по геокоординатам</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПолучитьАдреса</Action>
+			<Action>ПолучитьАдресаПоГеокоординатам</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбновитьСтатистику" id="3">
