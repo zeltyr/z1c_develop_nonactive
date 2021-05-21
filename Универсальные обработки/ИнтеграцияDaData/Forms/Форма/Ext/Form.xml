@@ -32,49 +32,88 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаПоискОрганизации" id="33">
+		<UsualGroup name="ГруппаСтатистикаСервиса" id="66">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Поиск организации</v8:content>
+					<v8:content>Группа статистика сервиса</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа поиск организации</v8:content>
+					<v8:content>Группа статистика сервиса</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="ГруппаПоискОрганизацииРасширеннаяПодсказка" id="34"/>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатистикаСервисаРасширеннаяПодсказка" id="67"/>
 			<ChildItems>
-				<InputField name="Инн" id="3">
-					<DataPath>Объект.СтрокаПоиска</DataPath>
-					<ContextMenu name="ИннКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="ИннРасширеннаяПодсказка" id="5"/>
+				<InputField name="Поле1" id="68">
+					<DataPath>СтатистикаИспользования</DataPath>
+					<ContextMenu name="Поле1КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="70"/>
 				</InputField>
-				<Button name="ТестовыйЗапрос" id="1">
+				<Button name="ОбновитьСтатистику" id="71">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьСтатистику</CommandName>
+					<ExtendedTooltip name="ОбновитьСтатистикуРасширеннаяПодсказка" id="72"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоискПоСтроке" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск по строке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск по строке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПоискПоСтрокеРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="СтрокаПоиска" id="3">
+					<DataPath>Объект.СтрокаПоиска</DataPath>
+					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<Button name="ПолучитьОрганизацию" id="1">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ПолучитьОрганизацию</CommandName>
-					<ExtendedTooltip name="ТестовыйЗапросРасширеннаяПодсказка" id="2"/>
+					<ExtendedTooltip name="ПолучитьОрганизациюРасширеннаяПодсказка" id="2"/>
 				</Button>
 				<Button name="ПолучитьОрганизациюПоИНН" id="77">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ПолучитьОрганизациюПоИНН</CommandName>
 					<ExtendedTooltip name="ПолучитьОрганизациюПоИННРасширеннаяПодсказка" id="78"/>
 				</Button>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа2" id="35">
-			<Group>Vertical</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="36"/>
-			<ChildItems>
 				<Button name="ПолучитьАдресПоСтроке" id="73">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ПолучитьАдресПоСтроке</CommandName>
 					<ExtendedTooltip name="ПолучитьАдресПоСтрокеРасширеннаяПодсказка" id="74"/>
 				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоискПоГеокоординатам" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск по геокоординатам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск по геокоординатам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаПоискПоГеокоординатамРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
 				<InputField name="широта" id="6">
 					<DataPath>Объект.широта</DataPath>
 					<ContextMenu name="широтаКонтекстноеМеню" id="7"/>
@@ -92,31 +131,21 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа5" id="66">
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="67"/>
-			<ChildItems>
-				<InputField name="Поле1" id="68">
-					<DataPath>СтатистикаИспользования</DataPath>
-					<ContextMenu name="Поле1КонтекстноеМеню" id="69"/>
-					<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="70"/>
-				</InputField>
-				<Button name="ОбновитьСтатистику" id="71">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ОбновитьСтатистику</CommandName>
-					<ExtendedTooltip name="ОбновитьСтатистикуРасширеннаяПодсказка" id="72"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа4" id="64">
+		<UsualGroup name="ГруппаРезультатыПоиска" id="64">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Результаты поиска</v8:content>
 				</v8:item>
 			</Title>
-			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="65"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результаты поиска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРезультатыПоискаРасширеннаяПодсказка" id="65"/>
 			<ChildItems>
 				<Table name="РезультатыПоиска" id="14">
 					<CommandBarLocation>None</CommandBarLocation>
@@ -189,17 +218,6 @@
 						</InputField>
 					</ChildItems>
 				</Table>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа3" id="62">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Детальная информация</v8:content>
-				</v8:item>
-			</Title>
-			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="63"/>
-			<ChildItems>
 				<Table name="ДанныеОрганизации" id="40">
 					<Representation>List</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
@@ -208,7 +226,7 @@
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
 					<FileDragMode>AsFile</FileDragMode>
-					<DataPath>ДанныеОрганизации</DataPath>
+					<DataPath>ДетальнаяИнформация</DataPath>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="ДанныеОрганизацииКонтекстноеМеню" id="41"/>
 					<AutoCommandBar name="ДанныеОрганизацииКоманднаяПанель" id="42"/>
@@ -239,13 +257,13 @@
 					</SearchControlAddition>
 					<ChildItems>
 						<InputField name="ДанныеОрганизацииРеквизит" id="53">
-							<DataPath>ДанныеОрганизации.Реквизит</DataPath>
+							<DataPath>ДетальнаяИнформация.Реквизит</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ДанныеОрганизацииРеквизитКонтекстноеМеню" id="54"/>
 							<ExtendedTooltip name="ДанныеОрганизацииРеквизитРасширеннаяПодсказка" id="55"/>
 						</InputField>
 						<InputField name="ДанныеОрганизацииЗначение" id="56">
-							<DataPath>ДанныеОрганизации.Значение</DataPath>
+							<DataPath>ДетальнаяИнформация.Значение</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ДанныеОрганизацииЗначениеКонтекстноеМеню" id="57"/>
 							<ExtendedTooltip name="ДанныеОрганизацииЗначениеРасширеннаяПодсказка" id="58"/>
@@ -262,11 +280,11 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="ДанныеОрганизации" id="2">
+		<Attribute name="ДетальнаяИнформация" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Данные организации</v8:content>
+					<v8:content>Детальная информация</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
