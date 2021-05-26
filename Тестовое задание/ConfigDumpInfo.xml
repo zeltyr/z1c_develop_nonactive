@@ -2,14 +2,18 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.10">
 	<ConfigVersions>
 		<Metadata name="Catalog.ГруппыАналогов" id="207e839b-ecba-49eb-a08a-caa69e3c5100" configVersion="b9f8918258ef6c49a19278d3487cfb7600000000"/>
-		<Metadata name="Catalog.Номенклатура" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45" configVersion="abba2b6ea381fb4ea140e70830ce868a00000000">
-			<Metadata name="Catalog.Номенклатура.Attribute.ГруппаАналогов" id="9bf20adf-c887-413f-849f-ac7d5b55cb8a"/>
+		<Metadata name="Catalog.Номенклатура" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45" configVersion="bc6c027c86cf4a49b8c40243f63b96f300000000">
+			<Metadata name="Catalog.Номенклатура.Attribute.ГруппаАналогов" id="ba5d3f9e-107b-46c2-a7ec-692fb5b87ee7"/>
 		</Metadata>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента" id="88bdbc3b-7888-46cc-8b00-178e1a433bee" configVersion="247f8eeda6059b479a135bf5604c9a3000000000"/>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента.Form" id="88bdbc3b-7888-46cc-8b00-178e1a433bee.0" configVersion="db2b0d4b8efc20428dbf65735b3fd98e00000000"/>
-		<Metadata name="Catalog.Номенклатура.ObjectModule" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45.0" configVersion="3f180833e98f2345b8d5e87c8ad321e200000000"/>
-		<Metadata name="Configuration.Конфигурация" id="269bb4f1-f107-4c9d-a099-5bf86639d0e1" configVersion="005e8e029af6574598aa7a9b6b2b5aef00000000"/>
-		<Metadata name="InformationRegister.АналогиНоменклатуры" id="4d78bde4-d887-4caf-abc7-4722d68f6b10" configVersion="33756f86b283a948b856fcad6533418100000000">
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка" id="aab69070-d751-4d72-9a03-31bb65b46a52" configVersion="8315a68453920e45bfcd7ad64187ea2400000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка.Form" id="aab69070-d751-4d72-9a03-31bb65b46a52.0" configVersion="873792fd53c2444a80e201ef441ad5de00000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента" id="88bdbc3b-7888-46cc-8b00-178e1a433bee" configVersion="d71c04cd731060498714e2d79412bb6500000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента.Form" id="88bdbc3b-7888-46cc-8b00-178e1a433bee.0" configVersion="4ed169ca22c12f4fb84fbeb70e63278000000000"/>
+		<Metadata name="Catalog.Номенклатура.ObjectModule" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45.0" configVersion="b6b63ee1b4ce1e4f9d9d0d17a3173d2f00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="269bb4f1-f107-4c9d-a099-5bf86639d0e1" configVersion="52b674a4f62bd343939dc676b5b372e900000000"/>
+		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="513d251a-5976-4802-aa8c-6476ef00ca38.b" configVersion="d50b64b5af854d43904c05743497e5ca00000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="513d251a-5976-4802-aa8c-6476ef00ca38.8" configVersion="7bd9277ea199c940a106c43766a062a800000000"/>
+		<Metadata name="InformationRegister.АналогиНоменклатуры" id="4d78bde4-d887-4caf-abc7-4722d68f6b10" configVersion="f749cf14be66ec4b95bac79dd96ecedc00000000">
 			<Metadata name="InformationRegister.АналогиНоменклатуры.Dimension.Номенклатура" id="0dbf1dc0-9e87-4701-9c9b-77f677609591"/>
 			<Metadata name="InformationRegister.АналогиНоменклатуры.Resource.ГруппаАналогов" id="b79908e6-5192-4064-ba89-b599af3d554e"/>
 		</Metadata>
