@@ -64,7 +64,7 @@
 			</Attribute>
 			<Attribute uuid="6d02e823-c7e8-4dab-a58e-080c232e3668">
 				<Properties>
-					<Name>широта</Name>
+					<Name>Широта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -102,7 +102,7 @@
 			</Attribute>
 			<Attribute uuid="f800984b-cdc3-41f4-abcb-fcc7c5379f5d">
 				<Properties>
-					<Name>долгота</Name>
+					<Name>Долгота</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

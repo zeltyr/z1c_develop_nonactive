@@ -20,6 +20,11 @@
 			</ToolTip>
 			<ExtendedTooltip name="ГруппаДанныеПодключенияРасширеннаяПодсказка" id="86"/>
 			<ChildItems>
+				<InputField name="Сервер" id="87">
+					<DataPath>Сервер</DataPath>
+					<ContextMenu name="СерверКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="89"/>
+				</InputField>
 				<InputField name="Токен" id="82">
 					<DataPath>Токен</DataPath>
 					<ContextMenu name="ТокенКонтекстноеМеню" id="83"/>
@@ -49,10 +54,10 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСтатистикаСервисаРасширеннаяПодсказка" id="67"/>
 			<ChildItems>
-				<InputField name="Поле1" id="68">
+				<InputField name="СтатистикаИспользования" id="68">
 					<DataPath>СтатистикаИспользования</DataPath>
-					<ContextMenu name="Поле1КонтекстноеМеню" id="69"/>
-					<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="70"/>
+					<ContextMenu name="СтатистикаИспользованияКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="СтатистикаИспользованияРасширеннаяПодсказка" id="70"/>
 				</InputField>
 				<Button name="ОбновитьСтатистику" id="71">
 					<Type>UsualButton</Type>
@@ -111,16 +116,16 @@
 					<v8:content>Группа поиск по геокоординатам</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>Vertical</Group>
+			<Group>AlwaysHorizontal</Group>
 			<ExtendedTooltip name="ГруппаПоискПоГеокоординатамРасширеннаяПодсказка" id="36"/>
 			<ChildItems>
 				<InputField name="широта" id="6">
-					<DataPath>Объект.широта</DataPath>
+					<DataPath>Объект.Широта</DataPath>
 					<ContextMenu name="широтаКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="широтаРасширеннаяПодсказка" id="8"/>
 				</InputField>
 				<InputField name="долгота" id="9">
-					<DataPath>Объект.долгота</DataPath>
+					<DataPath>Объект.Долгота</DataPath>
 					<ContextMenu name="долготаКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="долготаРасширеннаяПодсказка" id="11"/>
 				</InputField>
@@ -358,6 +363,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Секретный токен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сервер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
