@@ -5,10 +5,10 @@
 		<Metadata name="Catalog.Номенклатура" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45" configVersion="bc6c027c86cf4a49b8c40243f63b96f300000000">
 			<Metadata name="Catalog.Номенклатура.Attribute.ГруппаАналогов" id="ba5d3f9e-107b-46c2-a7ec-692fb5b87ee7"/>
 		</Metadata>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка" id="aab69070-d751-4d72-9a03-31bb65b46a52" configVersion="8315a68453920e45bfcd7ad64187ea2400000000"/>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка.Form" id="aab69070-d751-4d72-9a03-31bb65b46a52.0" configVersion="873792fd53c2444a80e201ef441ad5de00000000"/>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента" id="88bdbc3b-7888-46cc-8b00-178e1a433bee" configVersion="d71c04cd731060498714e2d79412bb6500000000"/>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента.Form" id="88bdbc3b-7888-46cc-8b00-178e1a433bee.0" configVersion="4ed169ca22c12f4fb84fbeb70e63278000000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка" id="aab69070-d751-4d72-9a03-31bb65b46a52" configVersion="6100fbe50918dc40bc518e8f379d03b100000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка.Form" id="aab69070-d751-4d72-9a03-31bb65b46a52.0" configVersion="ac932e9f370e51458938e2ad0cb640aa00000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента" id="88bdbc3b-7888-46cc-8b00-178e1a433bee" configVersion="7f6ed1e5920d3740a19950bb83f0bb7400000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента.Form" id="88bdbc3b-7888-46cc-8b00-178e1a433bee.0" configVersion="fa17c5b0a3a7694c9ae82eeb6a40cd5500000000"/>
 		<Metadata name="Catalog.Номенклатура.ObjectModule" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45.0" configVersion="b6b63ee1b4ce1e4f9d9d0d17a3173d2f00000000"/>
 		<Metadata name="Configuration.Конфигурация" id="269bb4f1-f107-4c9d-a099-5bf86639d0e1" configVersion="52b674a4f62bd343939dc676b5b372e900000000"/>
 		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="513d251a-5976-4802-aa8c-6476ef00ca38.b" configVersion="d50b64b5af854d43904c05743497e5ca00000000"/>
