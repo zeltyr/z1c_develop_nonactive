@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -83,17 +86,34 @@
 				</LabelField>
 				<LabelField name="ГруппаАналогов" id="22">
 					<DataPath>Список.ГруппаАналогов</DataPath>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 					<ContextMenu name="ГруппаАналоговКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ГруппаАналоговРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="СписокАналогов" id="25">
 					<DataPath>Список.СписокАналогов</DataPath>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 					<AutoCellHeight>true</AutoCellHeight>
 					<ContextMenu name="СписокАналоговКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="СписокАналоговРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
+		<LabelDecoration name="Декорация1" id="28">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>55</MaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>#666699</TextColor>
+			<Font italic="true" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки "Группа аналогов" и "Список аналогов" заполняются особым образом, поэтому по ним запрещён отбор, группировка и сортировка</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="30"/>
+		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">

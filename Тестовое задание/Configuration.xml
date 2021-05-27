@@ -185,6 +185,7 @@
 			<Language>Русский</Language>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>ГруппыАналогов</Catalog>
+			<DataProcessor>СоздатьНоменклатуру</DataProcessor>
 			<InformationRegister>АналогиНоменклатуры</InformationRegister>
 		</ChildObjects>
 	</Configuration>
