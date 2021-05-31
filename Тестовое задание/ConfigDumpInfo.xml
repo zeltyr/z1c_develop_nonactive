@@ -2,9 +2,11 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.10">
 	<ConfigVersions>
 		<Metadata name="Catalog.ГруппыАналогов" id="207e839b-ecba-49eb-a08a-caa69e3c5100" configVersion="a4913b5cf235e24788ed77820284767500000000"/>
-		<Metadata name="Catalog.Номенклатура" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45" configVersion="ebdda1f27f4f764f9a5be4eec851c36800000000"/>
+		<Metadata name="Catalog.Номенклатура" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45" configVersion="1d8a9fe00feeb2408f31e82eeb539a9e00000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка" id="aab69070-d751-4d72-9a03-31bb65b46a52" configVersion="66fab4a072ca2e48883825a892e69b0b00000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка.Form" id="aab69070-d751-4d72-9a03-31bb65b46a52.0" configVersion="0d1747909720f041ba1fc5d5f9b6c23400000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСпискаНовая" id="00247b96-1d2f-44b6-9c2e-5cb50eb2ebb6" configVersion="83c7e2b922c48540ab77355735839f1200000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСпискаНовая.Form" id="00247b96-1d2f-44b6-9c2e-5cb50eb2ebb6.0" configVersion="0ce5eda5a1438046b554d95ea0f73ae800000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента" id="88bdbc3b-7888-46cc-8b00-178e1a433bee" configVersion="9d1cec8cefb40144954e88cbf71d9de100000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента.Form" id="88bdbc3b-7888-46cc-8b00-178e1a433bee.0" configVersion="b425802e729b154bad8dd5dbdb51f17f00000000"/>
 		<Metadata name="Catalog.Номенклатура.Help" id="dab6ab81-0314-4d3d-9bb4-db39627bfa45.1" configVersion="bd296871291f594ab09677f77338d5ff00000000"/>

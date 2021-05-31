@@ -5,17 +5,44 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Код" id="1">
-			<DataPath>Объект.Code</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-		</InputField>
+		<UsualGroup name="ГруппаОсновныеДанные" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновныеДанныеРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="ГруппаАналогов" id="26">
 			<DataPath>ГруппаАналогов</DataPath>
 			<ContextMenu name="ГруппаАналоговКонтекстноеМеню" id="27"/>
@@ -24,12 +51,6 @@
 				<Event name="OnChange">ГруппаАналоговПриИзменении</Event>
 				<Event name="StartChoice">ГруппаАналоговНачалоВыбора</Event>
 			</Events>
-		</InputField>
-		<InputField name="Наименование" id="4">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
 		<Table name="ТаблицаАналогов" id="29">
 			<Representation>List</Representation>
@@ -73,6 +94,9 @@
 				<ContextMenu name="ТаблицаАналоговУправлениеПоискомКонтекстноеМеню" id="40"/>
 				<ExtendedTooltip name="ТаблицаАналоговУправлениеПоискомРасширеннаяПодсказка" id="41"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="ChoiceProcessing">ТаблицаАналоговОбработкаВыбора</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="ТаблицаАналоговЗначение" id="42">
 					<DataPath>ТаблицаАналогов.Value</DataPath>
@@ -80,8 +104,7 @@
 					<ContextMenu name="ТаблицаАналоговЗначениеКонтекстноеМеню" id="43"/>
 					<ExtendedTooltip name="ТаблицаАналоговЗначениеРасширеннаяПодсказка" id="44"/>
 					<Events>
-						<Event name="OnChange">ТаблицаАналоговЗначениеПриИзменении</Event>
-						<Event name="StartChoice">ТаблицаАналоговАналогНачалоВыбора</Event>
+						<Event name="ChoiceProcessing">ТаблицаАналоговЗначениеОбработкаВыбора</Event>
 					</Events>
 				</InputField>
 			</ChildItems>
@@ -105,6 +128,10 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<SavedData>true</SavedData>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Settings>
 		</Attribute>
 		<Attribute name="СтароеЗначениеГруппаАналогов" id="3">
 			<Title>
@@ -127,6 +154,7 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.ГруппыАналогов</v8:Type>
 			</Type>
+			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
 </Form>

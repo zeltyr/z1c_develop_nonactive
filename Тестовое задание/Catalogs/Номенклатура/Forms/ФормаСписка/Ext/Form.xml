@@ -99,21 +99,6 @@
 				</LabelField>
 			</ChildItems>
 		</Table>
-		<LabelDecoration name="Декорация1" id="28">
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<MaxWidth>55</MaxWidth>
-			<HorizontalStretch>true</HorizontalStretch>
-			<TextColor>#666699</TextColor>
-			<Font italic="true" kind="AutoFont"/>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Колонки "Группа аналогов" и "Список аналогов" заполняются особым образом, поэтому по ним запрещён отбор, группировка и сортировка</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="Декорация1КонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="30"/>
-		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
