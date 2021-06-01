@@ -183,6 +183,10 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>АналогиНоменклатуры</Subsystem>
+			<CommonTemplate>ОписаниеЗадания</CommonTemplate>
+			<CommandGroup>Справочники</CommandGroup>
+			<CommandGroup>РегистрыСведений</CommandGroup>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>ГруппыАналогов</Catalog>
 			<DataProcessor>СоздатьНоменклатуру</DataProcessor>

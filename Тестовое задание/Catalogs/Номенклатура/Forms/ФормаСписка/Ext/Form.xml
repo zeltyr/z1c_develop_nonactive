@@ -17,88 +17,163 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
-		<Table name="Список" id="3">
-			<Representation>List</Representation>
-			<CommandBarLocation>None</CommandBarLocation>
-			<DefaultItem>true</DefaultItem>
-			<UseAlternationRowColor>true</UseAlternationRowColor>
-			<InitialTreeView>ExpandTopLevel</InitialTreeView>
-			<EnableStartDrag>true</EnableStartDrag>
-			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-			<AutoRefresh>false</AutoRefresh>
-			<AutoRefreshPeriod>60</AutoRefreshPeriod>
-			<Period>
-				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-			</Period>
-			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-			<RestoreCurrentRow>false</RestoreCurrentRow>
-			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
-			<AllowRootChoice>false</AllowRootChoice>
-			<UpdateOnDataChange>Auto</UpdateOnDataChange>
-			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
-			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
-			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
-				<AdditionSource>
-					<Item>Список</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
-				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
-				<AdditionSource>
-					<Item>Список</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
-				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
-				<AdditionSource>
-					<Item>Список</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
-				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
-			</Events>
+		<UsualGroup name="ГруппаРасположениеСписков" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расположение списков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасположениеСписковРасширеннаяПодсказка" id="45"/>
 			<ChildItems>
-				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Наименование</DataPath>
+				<Table name="Список" id="3">
+					<CommandBarLocation>None</CommandBarLocation>
 					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
-				</LabelField>
-				<LabelField name="Код" id="19">
-					<DataPath>Список.Код</DataPath>
-					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
-				</LabelField>
-				<LabelField name="ГруппаАналогов" id="22">
-					<DataPath>Список.ГруппаАналогов</DataPath>
-					<TitleFont ref="style:NormalTextFont" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-					<ContextMenu name="ГруппаАналоговКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ГруппаАналоговРасширеннаяПодсказка" id="24"/>
-				</LabelField>
-				<LabelField name="СписокАналогов" id="25">
-					<DataPath>Список.СписокАналогов</DataPath>
-					<TitleFont ref="style:NormalTextFont" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-					<AutoCellHeight>true</AutoCellHeight>
-					<ContextMenu name="СписокАналоговКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="СписокАналоговРасширеннаяПодсказка" id="27"/>
-				</LabelField>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Список</DataPath>
+					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+					<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="5"/>
+					<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+						<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
+						<Event name="OnChange">СписокПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="Наименование" id="16">
+							<DataPath>Список.Наименование</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<LabelField name="ГруппаАналогов" id="41">
+							<DataPath>Список.ГруппаАналогов</DataPath>
+							<ContextMenu name="ГруппаАналоговКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ГруппаАналоговРасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<LabelField name="Код" id="19">
+							<DataPath>Список.Код</DataPath>
+							<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="АналогиНоменклатуры" id="22">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>АналогиНоменклатуры</DataPath>
+					<RowPictureDataPath>АналогиНоменклатуры.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="АналогиНоменклатурыКонтекстноеМеню" id="23"/>
+					<AutoCommandBar name="АналогиНоменклатурыКоманднаяПанель" id="24"/>
+					<ExtendedTooltip name="АналогиНоменклатурыРасширеннаяПодсказка" id="25"/>
+					<SearchStringAddition name="АналогиНоменклатурыСтрокаПоиска" id="26">
+						<AdditionSource>
+							<Item>АналогиНоменклатуры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="АналогиНоменклатурыСтрокаПоискаКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="АналогиНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="АналогиНоменклатурыСостояниеПросмотра" id="29">
+						<AdditionSource>
+							<Item>АналогиНоменклатуры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="АналогиНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="АналогиНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="АналогиНоменклатурыУправлениеПоиском" id="32">
+						<AdditionSource>
+							<Item>АналогиНоменклатуры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="АналогиНоменклатурыУправлениеПоискомКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="АналогиНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnGetDataAtServer">АналогиНоменклатурыПриПолученииДанныхНаСервере</Event>
+						<Event name="AfterDeleteRow">АналогиНоменклатурыПослеУдаления</Event>
+						<Event name="OnChange">АналогиНоменклатурыПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="АналогиНоменклатурыНоменклатура" id="35">
+							<DataPath>АналогиНоменклатуры.Номенклатура</DataPath>
+							<ContextMenu name="АналогиНоменклатурыНоменклатураКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="АналогиНоменклатурыНоменклатураРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<LabelField name="АналогиНоменклатурыГруппаАналогов" id="38">
+							<DataPath>АналогиНоменклатуры.ГруппаАналогов</DataPath>
+							<ContextMenu name="АналогиНоменклатурыГруппаАналоговКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="АналогиНоменклатурыГруппаАналоговРасширеннаяПодсказка" id="40"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -106,20 +181,58 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ЭтоГруппа</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	СправочникНоменклатура.Ссылка КАК Ссылка,
+	СправочникНоменклатура.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникНоменклатура.Родитель КАК Родитель,
+	СправочникНоменклатура.ЭтоГруппа КАК ЭтоГруппа,
 	СправочникНоменклатура.Код КАК Код,
 	СправочникНоменклатура.Наименование КАК Наименование,
-	АналогиНоменклатуры.ГруппаАналогов КАК ГруппаАналогов,
-	Выразить("" КАК СТРОКА(500)) КАК СписокАналогов
+	СправочникНоменклатура.Предопределенный КАК Предопределенный,
+	СправочникНоменклатура.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ЗНАЧЕНИЕ(Справочник.ГруппыАналогов.ПустаяСсылка) КАК ГруппаАналогов
 ИЗ
-	Справочник.Номенклатура КАК СправочникНоменклатура
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АналогиНоменклатуры КАК АналогиНоменклатуры
-		ПО (АналогиНоменклатуры.Номенклатура = СправочникНоменклатура.Ссылка)</QueryText>
+	Справочник.Номенклатура КАК СправочникНоменклатура</QueryText>
 				<MainTable>Catalog.Номенклатура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="АналогиНоменклатуры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналоги номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.АналогиНоменклатуры</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
