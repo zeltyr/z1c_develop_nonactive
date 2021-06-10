@@ -7,6 +7,11 @@
 			<CommandName>Form.Command.ПостроитьКроссТаблицу</CommandName>
 			<ExtendedTooltip name="ПостроитьКроссТаблицуРасширеннаяПодсказка" id="2"/>
 		</Button>
+		<Button name="ВыводИтоговПоПериоду" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ВыводИтоговСПериодами</CommandName>
+			<ExtendedTooltip name="ВыводИтоговПоПериодуРасширеннаяПодсказка" id="4"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -31,6 +36,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПостроитьКроссТаблицу</Action>
+		</Command>
+		<Command name="ВыводИтоговСПериодами" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод итогов с периодами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод итогов с периодами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыводИтоговСПериодами</Action>
 		</Command>
 	</Commands>
 </Form>
