@@ -26,6 +26,7 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Template>КроссТаблица</Template>
+			<Template>ДатаПериодами</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
