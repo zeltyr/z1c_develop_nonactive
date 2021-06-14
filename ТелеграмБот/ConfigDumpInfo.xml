@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.10">
+	<ConfigVersions>
+		<Metadata name="Catalog.ДанныеПодключения" id="f2913bcf-701e-4e5d-8cfb-bcaf2b30eba6" configVersion="3badb04d01b1924eaf832261c630894f00000000">
+			<Metadata name="Catalog.ДанныеПодключения.Attribute.Токен" id="046d4c83-c54f-4924-aeea-27ce4dc1f26f"/>
+			<Metadata name="Catalog.ДанныеПодключения.Attribute.Сервер" id="12d655c2-ba14-4879-b34a-e9b7548fdbc9"/>
+			<Metadata name="Catalog.ДанныеПодключения.Attribute.ОписаниеБота" id="353528a1-a1af-4a24-8469-ceb89edaa75f"/>
+		</Metadata>
+		<Metadata name="Configuration.Конфигурация" id="55523e4e-7ae6-4e1a-af3a-04802577bde9" configVersion="21c608c7814e754a9ed959924458652600000000"/>
+		<Metadata name="DataProcessor.ТелеграмБот" id="cdd3592a-92ec-420e-b549-bbb7323a2fda" configVersion="427ede562905d04a85b83e2716479e2f00000000">
+			<Metadata name="DataProcessor.ТелеграмБот.Attribute.Бот" id="a6fb4a68-0a56-4732-8dd6-edb9971d6c06"/>
+		</Metadata>
+		<Metadata name="DataProcessor.ТелеграмБот.ObjectModule" id="cdd3592a-92ec-420e-b549-bbb7323a2fda.0" configVersion="2c3074a09350844e9de44f8faeef828d00000000"/>
+		<Metadata name="Language.Русский" id="b0a0824a-04aa-495b-affa-9852ea45ffe5" configVersion="a89bb83adf7b324dbe5038cdbc91439e00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
