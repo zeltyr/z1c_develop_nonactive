@@ -7,10 +7,10 @@
 			<Metadata name="Catalog.ДанныеПодключения.Attribute.ОписаниеБота" id="353528a1-a1af-4a24-8469-ceb89edaa75f"/>
 		</Metadata>
 		<Metadata name="Configuration.Конфигурация" id="55523e4e-7ae6-4e1a-af3a-04802577bde9" configVersion="21c608c7814e754a9ed959924458652600000000"/>
-		<Metadata name="DataProcessor.ТелеграмБот" id="cdd3592a-92ec-420e-b549-bbb7323a2fda" configVersion="427ede562905d04a85b83e2716479e2f00000000">
+		<Metadata name="DataProcessor.ТелеграмБот" id="cdd3592a-92ec-420e-b549-bbb7323a2fda" configVersion="15bd3066c026c84780fc0885f7ff557200000000">
 			<Metadata name="DataProcessor.ТелеграмБот.Attribute.Бот" id="a6fb4a68-0a56-4732-8dd6-edb9971d6c06"/>
 		</Metadata>
-		<Metadata name="DataProcessor.ТелеграмБот.ObjectModule" id="cdd3592a-92ec-420e-b549-bbb7323a2fda.0" configVersion="2c3074a09350844e9de44f8faeef828d00000000"/>
+		<Metadata name="DataProcessor.ТелеграмБот.ObjectModule" id="cdd3592a-92ec-420e-b549-bbb7323a2fda.0" configVersion="4db2966a778c584099e7039bdf6a050000000000"/>
 		<Metadata name="Language.Русский" id="b0a0824a-04aa-495b-affa-9852ea45ffe5" configVersion="a89bb83adf7b324dbe5038cdbc91439e00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
