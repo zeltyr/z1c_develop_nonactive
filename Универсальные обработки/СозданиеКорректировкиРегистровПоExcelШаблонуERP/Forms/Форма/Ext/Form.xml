@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Создание корректировки регистров "Товары на складах" и "Свободные остатки" по Excel-шаблону</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ДатаДок" id="39">
+					<DataPath>ДатаДок</DataPath>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ДатаДокКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ДатаДокРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="Склад" id="3">
+					<DataPath>Склад</DataPath>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СкладКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="5"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<RadioButtonField name="ИмяРегистра" id="6">
+			<DataPath>ИмяРегистра</DataPath>
+			<RadioButtonType>Auto</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Товары на складах</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ТоварыНаСкладах</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Свободные остатки</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">СвободныеОстатки</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ИмяРегистраКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ИмяРегистраРасширеннаяПодсказка" id="8"/>
+		</RadioButtonField>
+		<UsualGroup name="ГруппаКнопкиФормы" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиФормыРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<Button name="ЗагрузитьИзExcel" id="1">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗагрузитьИзExcel</CommandName>
+					<ExtendedTooltip name="ЗагрузитьИзExcelРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="СоздатьКорректировку" id="37">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СоздатьКорректировку</CommandName>
+					<ExtendedTooltip name="СоздатьКорректировкуРасширеннаяПодсказка" id="38"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДанныеДляЗагрузки" id="9">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДанныеДляЗагрузки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеДляЗагрузкиКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="ДанныеДляЗагрузкиКоманднаяПанель" id="11"/>
+			<ExtendedTooltip name="ДанныеДляЗагрузкиРасширеннаяПодсказка" id="12"/>
+			<SearchStringAddition name="ДанныеДляЗагрузкиСтрокаПоиска" id="13">
+				<AdditionSource>
+					<Item>ДанныеДляЗагрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеДляЗагрузкиСтрокаПоискаКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ДанныеДляЗагрузкиСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеДляЗагрузкиСостояниеПросмотра" id="16">
+				<AdditionSource>
+					<Item>ДанныеДляЗагрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеДляЗагрузкиСостояниеПросмотраКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ДанныеДляЗагрузкиСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеДляЗагрузкиУправлениеПоиском" id="19">
+				<AdditionSource>
+					<Item>ДанныеДляЗагрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеДляЗагрузкиУправлениеПоискомКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ДанныеДляЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДанныеДляЗагрузкиДата" id="22">
+					<DataPath>ДанныеДляЗагрузки.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляЗагрузкиДатаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДанныеДляЗагрузкиДатаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ДанныеДляЗагрузкиВидДвижения" id="25">
+					<DataPath>ДанныеДляЗагрузки.ВидДвижения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляЗагрузкиВидДвиженияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДанныеДляЗагрузкиВидДвиженияРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ДанныеДляЗагрузкиНоменклатура" id="28">
+					<DataPath>ДанныеДляЗагрузки.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляЗагрузкиНоменклатураКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДанныеДляЗагрузкиНоменклатураРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ДанныеДляЗагрузкиСклад" id="31">
+					<DataPath>ДанныеДляЗагрузки.Склад</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляЗагрузкиСкладКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ДанныеДляЗагрузкиСкладРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ДанныеДляЗагрузкиВНаличии" id="34">
+					<DataPath>ДанныеДляЗагрузки.ВНаличии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляЗагрузкиВНаличииКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДанныеДляЗагрузкиВНаличииРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.СозданиеКорректировкиРегистровПоExcelШаблону</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Склад" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИмяРегистра" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеДляЗагрузки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Период" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДвижения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид движения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>ent:AccumulationRecordType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Склад" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВНаличии" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаДок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзExcel" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзExcel</Action>
+		</Command>
+		<Command name="СоздатьКорректировку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать корректировку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать корректировку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКорректировку</Action>
+		</Command>
+	</Commands>
+</Form>
