@@ -6,6 +6,7 @@ abspath = os.path.abspath(dirname)
 
 #генерируем тестовые файлы
 abspath = os.path.join(abspath, "test")
+os.mkdir(abspath)
 
 i = 999
 while i < 1010: 
