@@ -12,13 +12,12 @@ def DeleteFilesInFolder(abspath, curent_date):
     count_del = 0
 
     dirfiles = os.listdir(abspath)
-
     for file in dirfiles:
 
         file_path = os.path.join(abspath, file)
         if os.path.isdir(file_path):
             continue
-
+        
         full_name = os.path.basename(file_path)
         file_name = os.path.splitext(full_name)[0]
         if file_name in ex_files:
