@@ -1,0 +1,18 @@
+{
+    "default": {
+        "--ibconnection": "/SServer_name\\base_name",
+        "--db-user": "Username",
+        "--db-pwd": "",
+        "--v8version":"8.3.20",
+        "---no-wait": "",
+        "--ordinaryapp": "-1"
+    },
+    "xunit": {
+        "--xddConfig": "./tests/xUnitParams.json",
+        "testsPath": "./build/tests",
+        "--reportsxunit": "ГенераторОтчетаAllureXMLВерсия2{./build/allure/allure.xml}",
+        "--xddExitCodePath": "./build/xddExitCodePath.txt",
+        "--testclient": "testclient::48223",
+        "--testclient-additional" : "/iTaxi"
+    }
+}
