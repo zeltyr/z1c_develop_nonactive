@@ -12,6 +12,8 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытииАсинх</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -45,6 +47,11 @@
 					</ToolTip>
 					<ExtendedTooltip name="ИнтерактивноеВзаимодейтсвиеРасширеннаяПодсказка" id="46"/>
 					<ChildItems>
+						<Button name="ЗадатьВопросАсинх" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Демо_ВопросАсинх</CommandName>
+							<ExtendedTooltip name="ЗадатьВопросАсинхРасширеннаяПодсказка" id="2"/>
+						</Button>
 						<Button name="ПоказатьПредупреждениеАсинх" id="3">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.Демо_ПоказатьПредупреждениеАсинх</CommandName>
@@ -59,11 +66,6 @@
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.Демо_ВвестиЧислоАсинх</CommandName>
 							<ExtendedTooltip name="Демо_ВвестиЧислоАсинхРасширеннаяПодсказка" id="8"/>
-						</Button>
-						<Button name="ЗадатьВопросАсинх" id="1">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.Демо_ВопросАсинх</CommandName>
-							<ExtendedTooltip name="ЗадатьВопросАсинхРасширеннаяПодсказка" id="2"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -371,7 +373,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Демо попытка исключение асинх</v8:content>
+					<v8:content>Попытка исключение асинх</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -386,7 +388,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Демо появление исключения асинх</v8:content>
+					<v8:content>Появление исключения асинх</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -401,7 +403,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Демо появление исключения синх</v8:content>
+					<v8:content>Появление исключения синх</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
