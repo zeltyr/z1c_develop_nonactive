@@ -9,6 +9,11 @@
 				<CommandName>Form.StandardCommand.Close</CommandName>
 				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="54"/>
 			</Button>
+			<Button name="ФормаДемо_АнализОбещания" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Демо_АнализОбещания</CommandName>
+				<ExtendedTooltip name="ФормаДемо_АнализОбещанияРасширеннаяПодсказка" id="56"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -413,6 +418,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Демо_ПоявлениеИсключенияСинх</Action>
+		</Command>
+		<Command name="Демо_АнализОбещания" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ обещания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демо анализ обещания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Демо_АнализОбещания</Action>
 		</Command>
 	</Commands>
 </Form>
