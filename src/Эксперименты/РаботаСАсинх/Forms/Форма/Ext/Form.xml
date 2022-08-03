@@ -14,6 +14,11 @@
 				<CommandName>Form.Command.Демо_АнализОбещания</CommandName>
 				<ExtendedTooltip name="ФормаДемо_АнализОбещанияРасширеннаяПодсказка" id="56"/>
 			</Button>
+			<Button name="ФормаАнализПередачиПараметров" id="57">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Демо_АнализПередачиПараметров</CommandName>
+				<ExtendedTooltip name="ФормаАнализПередачиПараметровРасширеннаяПодсказка" id="58"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -225,6 +230,18 @@
 							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
 							<ExtendedTooltip name="Демо_ПопыткаИсключениеАсинхРасширеннаяПодсказка" id="38"/>
 						</Button>
+						<Button name="Демо_ПопыткаИсключениеФункцииАсинх" id="59">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Демо_ПопыткаИсключениеФункцииАсинх</CommandName>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<ExtendedTooltip name="Демо_ПопыткаИсключениеФункцииАсинхРасширеннаяПодсказка" id="60"/>
+						</Button>
+						<Button name="Демо_ПопыткаИсключениеФункцииАсинхБезЖдать" id="61">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Демо_ПопыткаИсключениеФункцииАсинхБезЖдать</CommandName>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<ExtendedTooltip name="Демо_ПопыткаИсключениеФункцииАсинхБезЖдатьРасширеннаяПодсказка" id="62"/>
+						</Button>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -384,7 +401,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Вызывает асинхронную функцию с ошибой в процедуре с Асинх и с попыткой</v8:content>
+					<v8:content>Вызывает асинхронную процедуру с ошибой в процедуре с Асинх и с попыткой</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>Демо_ПопыткаИсключениеАсинх</Action>
@@ -433,6 +450,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Демо_АнализОбещания</Action>
+		</Command>
+		<Command name="Демо_АнализПередачиПараметров" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ передачи параметров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демо анализ передачи параметров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Демо_АнализПередачиПараметров</Action>
+		</Command>
+		<Command name="Демо_ПопыткаИсключениеФункцииАсинхБезЖдать" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Попытка исключение функции асинх (без ждать)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вызывает асинхронную функцию с ошибкой через попытку исключение без ждать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Демо_ПопыткаИсключениеФункцииАсинхБезЖдать</Action>
+		</Command>
+		<Command name="Демо_ПопыткаИсключениеФункцииАсинх" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Попытка исключение функции асинх (с ждать)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вызывает асинхронную функцию с ошибкой через попытку исключение с ждать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Демо_ПопыткаИсключениеФункцииАсинх</Action>
 		</Command>
 	</Commands>
 </Form>
