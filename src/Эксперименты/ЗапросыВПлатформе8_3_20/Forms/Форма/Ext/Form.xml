@@ -25,6 +25,11 @@
 			<CommandName>Form.Command.РазмерХранимыхДанных</CommandName>
 			<ExtendedTooltip name="РазмерХранимыхДанныхРасширеннаяПодсказка" id="10"/>
 		</Button>
+		<Button name="ЭкспериментыПоКомментариюКСтатье" id="11">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЭкспериментыПоКомментариюКСтатье</CommandName>
+			<ExtendedTooltip name="ЭкспериментыПоКомментариюКСтатьеРасширеннаяПодсказка" id="12"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -94,6 +99,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>РазмерХранимыхДанных</Action>
+		</Command>
+		<Command name="ЭкспериментыПоКомментариюКСтатье" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Эксперименты по комментарию к статье</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Эксперименты по комментарию к статье</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЭкспериментыПоКомментариюКСтатье</Action>
 		</Command>
 	</Commands>
 </Form>
