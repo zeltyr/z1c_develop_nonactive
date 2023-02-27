@@ -202,6 +202,12 @@
 									<ChildItems>
 										<CheckBoxField name="НайтрокиДляАнализаИспользовать" id="48">
 											<DataPath>НастройкиДляАнализа.Использовать</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалять</v8:content>
+												</v8:item>
+											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="НайтрокиДляАнализаИспользоватьКонтекстноеМеню" id="49"/>
