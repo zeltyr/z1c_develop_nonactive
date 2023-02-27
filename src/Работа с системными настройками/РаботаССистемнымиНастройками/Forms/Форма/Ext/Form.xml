@@ -33,11 +33,6 @@
 						<CommandName>Form.Command.УдалитьСУчетомШаблонов</CommandName>
 						<ExtendedTooltip name="УдалитьСУчетомШаблоновРасширеннаяПодсказка" id="101"/>
 					</Button>
-					<Button name="ОчиститьИсториюРаботыПользователей" id="102">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ОчиститьИсториюРаботыПользователей</CommandName>
-						<ExtendedTooltip name="ОчиститьИсториюРаботыПользователейРасширеннаяПодсказка" id="103"/>
-					</Button>
 					<Button name="ОчиститьВсеНастройкиНеСуществующихПользователей" id="104">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ОчиститьВсеНастройкиНеСуществующихПользователей</CommandName>
@@ -51,6 +46,11 @@
 							<xr:LoadTransparent>true</xr:LoadTransparent>
 						</Picture>
 						<ExtendedTooltip name="УдалитьВсеНастройкиРасширеннаяПодсказка" id="99"/>
+					</Button>
+					<Button name="ОчиститьИсториюРаботыПользователей" id="102">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьИсториюРаботыПользователей</CommandName>
+						<ExtendedTooltip name="ОчиститьИсториюРаботыПользователейРасширеннаяПодсказка" id="103"/>
 					</Button>
 				</ChildItems>
 			</Popup>
